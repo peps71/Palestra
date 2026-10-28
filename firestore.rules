@@ -1,0 +1,16 @@
+rules_version = '2';
+
+// Regole del database di Diario Full Body.
+// Ogni account vede e scrive solo la sua cartella: /users/{uid}/diario/...
+// Si incollano in console.firebase.google.com → progetto della palestra →
+// Firestore Database → Rules, al posto di quello che c'è, poi «Publish».
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid}/diario/{documento} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+    match /{documento=**} {
+      allow read, write: if false;
+    }
+  }
+}
