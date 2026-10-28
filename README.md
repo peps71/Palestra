@@ -6,7 +6,7 @@ peso corporeo e grafici dei progressi.
 
 È un'app **separata da TaxiManager**: repository suo, indirizzo suo, database suo.
 
-Indirizzo: **https://peps71.github.io/palestra/**
+Indirizzo: **https://peps71.github.io/Palestra/**
 
 Sull'iPhone: apri l'indirizzo in Safari → Condividi → «Aggiungi alla schermata Home».
 
@@ -21,7 +21,7 @@ Sull'iPhone: apri l'indirizzo in Safari → Condividi → «Aggiungi alla scherm
 
 ## Pubblicazione su GitHub Pages (una volta sola)
 
-GitHub → repository `palestra` → **Settings → Pages** → «Build and deployment»:
+GitHub → repository `Palestra` → **Settings → Pages** → «Build and deployment»:
 Source **Deploy from a branch**, Branch **main**, cartella **/ (root)** → Save.
 Dopo un paio di minuti l'app è all'indirizzo sopra. Ogni modifica caricata su `main`
 si pubblica da sola.
